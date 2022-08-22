@@ -1,0 +1,8 @@
+<h3>Message: <mark>{{message}}</mark> </h3>
+
+<input #htmlElement [value]="message" (keyup)="changeMessage(htmlElement.value)"/>
+<br/>
+{{htmlElement.value}}
+<br/>
+
+<button (click)="changeMessage(htmlElement.value)">Change</button>

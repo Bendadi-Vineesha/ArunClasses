@@ -1,0 +1,49 @@
+GET https://c3vm17j2dg.execute-api.us-east-1.amazonaws.com/dev/movies
+
+###
+
+GET https://c3vm17j2dg.execute-api.us-east-1.amazonaws.com/dev/movies/11
+
+###
+
+GET https://c3vm17j2dg.execute-api.us-east-1.amazonaws.com/dev/22
+
+###
+
+POST https://c3vm17j2dg.execute-api.us-east-1.amazonaws.com/dev/movies
+content-type: application/json
+
+{
+  "title": "Shaktiman",
+  "director": "Mukesh",
+  "ratings": 4.7
+}
+
+###
+
+POST https://c3vm17j2dg.execute-api.us-east-1.amazonaws.com/dev/movies
+content-type: application/json
+
+{
+  "title": "some name",
+  "director": "007",
+  "ratings": 4.7,
+  "genres": "action"
+}
+
+###
+
+PUT https://c3vm17j2dg.execute-api.us-east-1.amazonaws.com/dev/6
+content-type: application/json
+
+{
+  "title": "Rajnikant",
+  "director": "Rajni",
+  "ratings": 4.8
+}
+
+###
+
+DELETE https://c3vm17j2dg.execute-api.us-east-1.amazonaws.com/dev/5
+
+

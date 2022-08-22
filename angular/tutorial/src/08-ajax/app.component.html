@@ -1,0 +1,21 @@
+<button (click)="create()">Create</button>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Ratings</th>
+            <th>Director</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{movie.id}}</td>
+            <td>{{movie.title}}</td>
+            <td>{{movie.ratings}}</td>
+            <td>{{movie.director}}</td>
+            <td><button (click)="deleteMovie(movie.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

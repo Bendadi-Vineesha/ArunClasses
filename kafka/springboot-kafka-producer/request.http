@@ -1,0 +1,6 @@
+GET http://localhost:8081/kafka/publish
+
+###
+
+GET http://localhost:8081/kafka/publish/rainInBrain
+ 

@@ -1,0 +1,45 @@
+<button type="button" class="btn">
+  Simple demo
+</button>
+<button type="button" class="btn btn-primary">
+  primary demo
+</button>
+<button type="button" class="btn btn-success">
+  success demo
+</button>
+<button type="button" class="btn btn-info">
+  info demo
+</button>
+<button type="button" class="btn btn-warning">
+  warning demo
+</button>
+<button type="button" class="btn btn-secondary">
+  secondary demo
+</button>
+<button type="button" class="btn btn-danger">
+  danger demo
+</button>
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+    <input type="text"
+           placeholder="Datepicker"
+           class="form-control"
+           bsDatepicker
+           #dp1
+           >
+  </div>
+  <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+    <input type="text"
+           placeholder="Daterangepicker"
+           class="form-control"
+           bsDaterangepicker
+           #dp2
+           >
+  </div>
+
+  <div>DP1: {{dp1.value}}</div>
+  <div>DP2: {{dp2.value}}</div>
+</div>

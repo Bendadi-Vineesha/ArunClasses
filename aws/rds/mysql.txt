@@ -1,0 +1,24 @@
+create db -> mysql -> free option -> public access ->
+
+username: admin
+password: -
+Port: 3306
+Host: -
+
+
+
+
+Connect to mysql db:
+    $ mysql --host localhost --port 3306 -u username -ppassword
+
+
+
+    
+
+Export database: 
+    $ mysqldump --host <host> --port <port> -u <username> -p<password> <dbname> > <filename>.sql
+
+create database <dbname>
+Import database: 
+    $ mysql --host <host> -u <username> -p<password> <dbname> < <filename>.sql
+

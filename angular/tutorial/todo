@@ -1,0 +1,14 @@
+Do not use -> powershell
+
+
+	$ download and install nodejs -> npm is subset -> 16
+		$ node -v
+		$ npm -v
+	$ npm install -g @angular/cli
+		$ ng version
+	$ ng new proj
+	
+	install dependencies
+	$ npm i
+	
+	$ npm run start

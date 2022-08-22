@@ -1,0 +1,26 @@
+From: https://valor-software.com/ngx-bootstrap/#/components/buttons?tab=overview
+
+datepicker
+    https://valor-software.com/ngx-bootstrap/#/components/buttons?tab=overview
+
+
+$ ng add ngx-bootstrap
+
+$ npm install bootstrap-5-css-only
+
+angular.json
+    "styles": [
+        "src/styles.scss",
+        "node_modules/bootstrap-5-css-only/css/bootstrap.min.css",
+        "node_modules/ngx-bootstrap/datepicker/bs-datepicker.scss"
+    ],
+
+app.module.ts
+  imports: [
+    ButtonsModule.forRoot(),
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
+    BrowserModule
+  ],
+
+

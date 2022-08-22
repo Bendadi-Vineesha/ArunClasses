@@ -1,0 +1,54 @@
+GET http://localhost:8080/api/v1/movies
+
+###
+
+GET http://localhost:8080/api/v1/movies/2
+
+###
+
+GET http://localhost:8080/api/v1/movies/22
+
+###
+
+POST http://localhost:8080/api/v1/movies
+content-type: application/json
+
+{
+  "title": "Shaktiman",
+  "director": "Mukesh",
+  "ratings": 4.7
+}
+###
+
+POST http://localhost:8080/api/v1/movies
+content-type: application/xml 
+accept: application/json
+
+<Movie>
+  <title>Shaktiman</title>
+  <director>Mukesh</director>
+  <ratings>4.7</ratings>
+</Movie>
+###
+
+PUT http://localhost:8080/api/v1/movies/6
+content-type: application/json
+
+{
+  "title": "Rajnikant",
+  "director": "Rajni",
+  "ratings": 4.8
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/movies/2
+
+
+###
+
+GET http://localhost:8080/api/v1/movies/by?title=Superman
+
+###
+
+GET http://localhost:8080/api/v1/movies/by?title=Superman&ratings=4.6

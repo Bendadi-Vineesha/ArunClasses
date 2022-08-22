@@ -1,0 +1,59 @@
+Create EC2
+allow users via security group inbound rules
+	my machine for ssh and 22
+	anyone for http, 80 and 8080
+make connection -> ssh @ec2-user:DNS
+
+deploy ws/p05-
+-------------
+
+
+0. Create link for jar
+	S3 to upload code (javacode.jar, angular.zip)
+	git
+	Github, bitbucket
+	onenote
+
+- upload and download in ec2 (link) 
+	wget link
+
+
+
+1. Run springboot application
+- install java 8
+--- sudo yum install java-1.8.0-openjdk
+
+- download java jar
+-- wget link 
+- java -jar appname.jar
+
+2. Run angular application
+- download angular code (html, js)
+-- wget link 
+$ unzip filename.zip
+
+- install server - httpd, nginx, tomcat, php, jboss
+-- nginx 
+	$ sudo yum install nginx
+	// amazon command
+    -- sudo amazon-linux-extras install nginx1
+
+	After installation:
+		public ip:80
+		public ip
+		
+	$ sudo service nginx stop
+	
+    // copy angular code here
+	$ cd /usr/share/nginx/html
+	sudo su
+	
+	// delete
+	$ unlink index.html
+	....
+	$ rm -rf icons
+	
+	
+	$ cp /home/ec2-user/apps/style-demo/*.* .
+	
+	$ sudo service nginx start

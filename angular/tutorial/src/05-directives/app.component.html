@@ -1,0 +1,15 @@
+<h2>Directives Demo</h2>
+
+<button (click)="toggle()">Flag: {{flag}}</button>
+
+<ul>
+    <li>This is text 1</li>
+    <li class="failure">This is text 2</li>
+    <li class="success">This is text 3</li>
+    <li [ngClass]="myCssClass">This is text 4</li>
+    <li [ngClass]="44>12?'success':'failure'">This is text 5</li>
+</ul>
+
+<ul>
+    <li [ngStyle]="myStyle">This is text 1</li>
+</ul>

@@ -1,0 +1,17 @@
+Custom pipes:
+    to convert names to capitalize format
+    suPeRMaN iS On thE mOOn, false -> Superman is on the moon 
+    suPeRMaN iS On thE mOOn, true -> Superman Is On The Moon 
+
+    to find power of a num
+    4, 3 -> 4*4*4
+    5, 2 -> 5*5
+
+    @Pipe({
+        name: "capitalize"
+    })
+    class CapitalizePipe{
+        transform(arg1, arg2=false){
+            return new value;
+        }
+    }

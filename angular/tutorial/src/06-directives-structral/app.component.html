@@ -1,0 +1,24 @@
+<h2>Structral Demo</h2>
+
+<button (click)="sendRequest()">Send</button>
+
+<p *ngIf="errorMessage.length>0">Error: {{errorMessage}}</p>
+
+<table border="1" *ngIf="books.length>0">
+    <thead>
+        <tr>  
+            <th>S.No.</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books;let i = index">
+            <td>{{i+1}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.price}}</td>
+        </tr>
+    </tbody>
+</table>

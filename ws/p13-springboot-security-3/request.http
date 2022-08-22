@@ -1,0 +1,36 @@
+GET http://localhost:8080/greet
+###
+GET http://localhost:8080/greet/Tom
+###
+GET http://localhost:8080/admin
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wNy0yMVQxNjozNDoxOC44OTQ0MTI1MzUiLCJzdWIiOiJtYW5hZ2VyIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjU4NDE5NDU4LCJpYXQiOjE2NTg0MDE0NTh9.m4OPGV7vzG2oHgF-VnqHz8yPsAKh4MdGq1X0LP5-zEFCprsDhmRgjSjU6vmx7IxVrJMlXixmrG_5w74PKnm1IA
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wNy0yMVQxNjozNDowMy42ODc1MDE2MDIiLCJzdWIiOiJhZG1pbiIsInJvbGUiOiJ1c2VyIiwibWVzc2FnZSI6InNvbWUgb3RoZXIgbWVzc2FnZSIsImV4cCI6MTY1ODQxOTQ0MywiaWF0IjoxNjU4NDAxNDQzfQ.NjQ5GASz5rkpSb2pyL1m8mYvXTG4kRrxf2qoDIrsLfXKlnTsJzVomot5HhxldVRNmwxR9kkrhsbrOAKdAKQWYg
+
+###
+GET http://localhost:8080/manager
+# Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wNy0yMVQxNjozNDoxOC44OTQ0MTI1MzUiLCJzdWIiOiJtYW5hZ2VyIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjU4NDE5NDU4LCJpYXQiOjE2NTg0MDE0NTh9.m4OPGV7vzG2oHgF-VnqHz8yPsAKh4MdGq1X0LP5-zEFCprsDhmRgjSjU6vmx7IxVrJMlXixmrG_5w74PKnm1IA
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wNy0yMVQxNjozNDowMy42ODc1MDE2MDIiLCJzdWIiOiJhZG1pbiIsInJvbGUiOiJ1c2VyIiwibWVzc2FnZSI6InNvbWUgb3RoZXIgbWVzc2FnZSIsImV4cCI6MTY1ODQxOTQ0MywiaWF0IjoxNjU4NDAxNDQzfQ.NjQ5GASz5rkpSb2pyL1m8mYvXTG4kRrxf2qoDIrsLfXKlnTsJzVomot5HhxldVRNmwxR9kkrhsbrOAKdAKQWYg
+
+###
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "admin@123"
+}
+
+# eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wNy0yMVQxNjozNDowMy42ODc1MDE2MDIiLCJzdWIiOiJhZG1pbiIsInJvbGUiOiJ1c2VyIiwibWVzc2FnZSI6InNvbWUgb3RoZXIgbWVzc2FnZSIsImV4cCI6MTY1ODQxOTQ0MywiaWF0IjoxNjU4NDAxNDQzfQ.NjQ5GASz5rkpSb2pyL1m8mYvXTG4kRrxf2qoDIrsLfXKlnTsJzVomot5HhxldVRNmwxR9kkrhsbrOAKdAKQWYg
+
+###
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "manager",
+    "password": "manager@123"
+}
+
+# eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wNy0yMVQxNjozNDoxOC44OTQ0MTI1MzUiLCJzdWIiOiJtYW5hZ2VyIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjU4NDE5NDU4LCJpYXQiOjE2NTg0MDE0NTh9.m4OPGV7vzG2oHgF-VnqHz8yPsAKh4MdGq1X0LP5-zEFCprsDhmRgjSjU6vmx7IxVrJMlXixmrG_5w74PKnm1IA
+
+###

@@ -1,0 +1,32 @@
+<h2>Forms Demo</h2>
+
+
+<hr/>
+myForm.valid: {{myForm.valid}} <br/>
+myForm.invalid: {{myForm.invalid}} <br/>
+myForm.dirty: {{myForm.dirty}} <br/>
+myForm.pristine: {{myForm.pristine}} <br/>
+
+username errors: {{myForm.controls['username'].errors | json}} <br/>
+username dirty: {{myForm.controls['username'].dirty}} <br/>
+
+
+<!-- username required errors: {{myForm.controls['username'].errors.required}} <br/>
+username errors: {{myForm.controls['username'].errors.pattern | json}} <br/> -->
+
+<hr/>
+
+
+<form [formGroup]="myForm">
+    Username: <input type="text" formControlName="username" /><br/>
+
+    <span *ngIf="myForm.controls['username'].errors!=null && myForm.controls['username'].dirty" class="error">
+        <span *ngIf="!!myForm.controls['username'].errors['required']">Username can not be empty</span>
+        <span *ngIf="!!myForm.controls['username'].errors['pattern']">Please enter a valid email id</span>
+        <br/>
+    </span>
+
+    Password: <input type="text" formControlName="password" /><br/>
+
+    <button [disabled]="myForm.invalid" type="button" (click)="getLogin()">Login</button>
+</form>
